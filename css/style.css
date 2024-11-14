@@ -48,6 +48,7 @@
 html{
     scroll-behavior: smooth;
     height: 100%;
+    font-size: 62.5%;  /* => 10px */
 }
 body{
     height: 100%;
@@ -55,77 +56,131 @@ body{
     font-weight: 500;
     color: white;
 }
-.hero{
+main{
     flex-grow: 1;
 }
 .container{
     width: 100%;
-    max-width: 1865px;
+    max-width: 186.5rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 165px;
-    padding-right: 165px;
-}
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;}
 .header{
     width: 100%;
-    height: 100vh;  
-    padding-top: 65px;
+    padding-top: 6.5rem;
     background-image:url("../img/header-bg-img.png") ;
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+    padding-bottom: 19.8rem;
+
 }
 .header__logo{
     color: #fff;
-    font-size: 56px;
-    padding-bottom: 153px;
+    font-size: 5.6rem;
+    padding-bottom: 15.3rem;
 }   
 .header__container h1{
     width: 508px;
-    font-size: 80px;
+    font-size: 8rem;
     font-weight: 300;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
     line-height: 80px;
     padding-bottom: 10px;
 }
 .header__container p{
     width: 445px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
     font-weight: 400;
-    margin-bottom: 70px;
+    margin-bottom: 7rem;
 }
-.footer-top a,
+
 .header__container a{
     color: #fff;
     text-decoration: none;
-    border: 1px solid #fff; 
+    border: .1rem solid #fff; 
     font-weight: 600;
-    letter-spacing: 2.5px;
-    line-height: 16px;
-    font-size: 17px;
-    padding: 25px 54px;
+    letter-spacing: .25rem;
+    line-height: 1.6rem;
+    font-size: 1.7rem;
+    padding: 2.5rem 5.4rem;
+    transition: .3s;
 }
+.header__container a:hover{
+    border: .1rem solid black;
+    background-color: black;
+}
+
+
+/* ENJOY */
+.enjoy-container{
+    display: flex;
+    align-items:center;
+    padding-bottom: 3rem;
+    color:black;
+}
+.enjoy-left__img{
+    width: 54rem;
+    margin-top: -10rem;
+    box-shadow: 0 1rem 2rem #111;
+    margin-right: 24.5rem;
+}
+.enjoy-desc{
+    width: 44.5rem;
+}
+.enjoy-desc h2{
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.02rem;
+    padding-bottom: 2.7rem;
+    color: #242B37;
+    font-weight: 700;
+}
+.enjoy-desc p{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: #242B37;
+    
+}
+
+
+/* local */
+.local-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+}
+.local-right__img{
+    margin-bottom: -10rem;
+    width: 54rem;
+    box-shadow: 0 0 2rem #111;
+}
+
+
+/* HERO */
 .hero{
     width: 100%;
-    height: 100vh;
     background-color: #111;
-    padding-top: 200px;
+    padding-top: 20rem;
+    padding-bottom: 2rem;
 }
 .hero__divider{
-    padding-bottom: 55px;
+    padding-bottom: 5.5rem;
 }
 .hero-left h1{
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
     font-weight: 700;
-    padding-bottom: 27px;
+    padding-bottom: 2.7rem;
 }
 .hero-left p{
     width: 445px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
     font-weight: 400;
 }
 
@@ -133,34 +188,87 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.hero-right{
+    padding-bottom: 12rem;
+}
 .hero-right__img{
     display: flex;
-    padding-bottom: 24px;
-    gap: 62px;
+    padding-bottom: 2.4rem;
+    gap: 6.2rem;
     align-items: center;
 }
 .hero-right__img img{
     width: 160px;
 }
 .img_text h5{
-    font-size: 20px;
-    letter-spacing: -0.25px;
+    font-size: 2rem;
+    letter-spacing: -0.025rem;
     font-weight: 700;
-    line-height: 24px;
-    padding-bottom: 6px;
+    line-height: 2.4rem;
+    padding-bottom: .6rem;
 }
 .img_text p{
     width: 350px;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 2.6rem;
     font-weight: 400;
 }
 .hero-right__divider{
     width: 540px;
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
     opacity: 14.94%;
 }
+
+/* FAMILY */
+.family-container{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
+.family-container img{
+    width: 54rem;
+    box-shadow: 1rem 2rem 3rem #222;
+    margin-right: 28.5rem;
+}
+.family-right{
+    width: 44.5rem;
+}
+.family-right h2{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
+    color: #242B37;
+    padding-bottom: 1.9rem;
+}
+.family-right p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #242B37;
+    line-height: 3rem;
+    margin-bottom: 8rem;
+}
+.family-right a{
+    padding: 2.5rem 5.4rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    letter-spacing: 0.25rem;
+    border:.2rem solid transparent;
+    transition: .3s;
+}
+.family-right a:hover{
+    border: .2rem solid black;
+    background-color: white;
+    color: #111;
+}
+
+
+/* FOOTER */
 .footer{
     width: 100%;
     height: 50vh;
@@ -172,31 +280,56 @@ body{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+}
+.footer-top-container{
     display: flex;
     justify-content: center;
-    gap: 250px;
-    align-items: center;
+    gap: 25rem;
+    padding-top: 11rem;
 }
+.footer-top-container a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: .1rem solid #fff; 
+    font-weight: 600;
+    letter-spacing: .25rem;
+    line-height: 1.6rem;
+    font-size: 1.7rem;
+    padding: 2.5rem 5.4rem;
+    transition: .3s;
+}
+.footer-top-container a:hover{
+    border: .1rem solid black;
+    background-color: black;
+}
+.footer-top-container h2{
+    font-size: 4.8rem;
+}
+
+
+/* footer-bottom */
 .footer-bottom{
     width: 100%;
-    height: 240px;
     background-color:#111;
 }
-.footer-bottom{
+.footer-bottom-container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 .footer__logo{
     color: #fff;
-    font-size: 56px;
+    font-size: 5.6rem;
 }
-.footer-address p,
-.footer-number p{
-    padding-bottom: 6px;
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 2px;
-    font-weight: 400;
+.footer-bottom-container p{
     text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
 }
+
+
+
